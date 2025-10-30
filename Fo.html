@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><title>Form Example</title></head>
+    <body>
+        <h2>Admission Form</h2>
+        <form>
+            <!---Personal Information--->
+
+            <label for="first name">First name:</label>
+            <input type="text" name="first name" placeholder="Enter your first name"><br><br>
+            <label for="last name">Last name:</label>
+            <input type="text" name="last name" placeholder="Enter your last name"><br><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob"><br><br>
+
+        Gender :
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="Male">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="female">
+        <label for="other">Other</label>
+        <input type="radio" name="gender" value="other"><br><br>
+
+        <!----Contact Information---->
+        <label for ="email">Email:</label>
+        <input type="email" name="email" placeholder="Enter Your Email"><br><br>
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" name="mobile" pattern="[0-9]{10}" minlength="10" maxlength="10"
+        placeholder="Enter your 10-digit mobile number"><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea name="address"></textarea><br><br>
+
+        <!---Course Details--->
+        <label for="Course">Select Course:</label>
+        <select name="Course">
+            <option value="">Choose your course</option>
+            <option value="Ai and Machine Learning">AI and Machine Learning</option>
+            <option value="Internet of Things Technology">Internet of Things Technology</option>
+            <option value="Ai and data science">AI and Data Science</option>
+            <option value="data science">Data Science</option>
+            <option value="cyber security">Cyber Security</option>
+
+        </select><br><br>
+
+        <label for="Qualification">Highest Qualification:</label>
+        <input type="text" name="Qualification" placeholder="Enter your highest qualification"><br><br>
+
+        <!---Upload Photo--->
+        <label for="photo">Upload Photo:</label>
+        <input type="file" name="photo" accept="image/*"><br><br>
+
+        <!---Notes--->
+        <label for="notes">Additional Notes:</label><br>
+        <textarea name="notes"></textarea><br><br>
+
+        <!---Submit and reset buttons--->
+        <input type="submit" value ="submit">
+        <input type="reset" value="reset">
+
+         </form>
+    </body>
+
+    </html>
