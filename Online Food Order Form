@@ -9,8 +9,8 @@
         <hr>
         <form>
             <h3>Customer Details</h3>
-            Full Name:<input type="text" name="Full Name"><br><br>
-            Phone Number:<input type="tel" name="Mobile Number"><br><br>
+           Full Name:<input type="text" name="Full Name"><br><br>
+           Phone Number:<input type="tel" name="number" pattern="[0-9]{10}" maxlength="10" minlength="10"><br><br>
             Address:<br>
             <textarea name="Address"></textarea><br><br>
 
@@ -45,3 +45,4 @@
         </form>
     </body>
 </html>
+
